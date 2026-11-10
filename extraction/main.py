@@ -7,6 +7,7 @@ load_dotenv()
 
 # Retrieve our Riot API key
 api_key = os.getenv("RIOT_API_KEY")
+print("API Key:", api_key)
 
 # Check that we have an API key
 if not api_key:
@@ -43,3 +44,7 @@ print("Number of challengers:", len(data["entries"]))
 
 # Display the first challenger
 print(data["entries"][0])
+
+# Test pulling a match
+# test PUUID heD5TMXkZFa4HKjYLv65wxB8DOF7XXVoJWbdTvlZUB9grSAKwHkDjzBfRLXBTgo5h6CWkEbXeG6IDQ
+
